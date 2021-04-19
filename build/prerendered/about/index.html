@@ -4,17 +4,22 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script
+			type="module"
+			src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+		></script>
+		<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
 		<title>About</title>
 
 		
 
-		<link rel="modulepreload" href="/./_app/start-7be64c4d.js">
-		<link rel="modulepreload" href="/./_app/chunks/index-befac657.js">
-		<link rel="modulepreload" href="/./_app/pages/$layout.svelte-96f9f7ea.js">
-		<link rel="modulepreload" href="/./_app/pages/about.svelte-216ce0a2.js">
+		<link rel="modulepreload" href="/./_app/start-1d07e4d8.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-0bc65d02.js">
+		<link rel="modulepreload" href="/./_app/pages/$layout.svelte-3aae97db.js">
+		<link rel="modulepreload" href="/./_app/pages/about.svelte-37436fe0.js">
 		<link rel="stylesheet" href="/./_app/assets/start-0826e215.css">
-		<link rel="stylesheet" href="/./_app/assets/pages/$layout.svelte-ad0ec971.css">
-		<link rel="stylesheet" href="/./_app/assets/pages/about.svelte-51ba7a34.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/$layout.svelte-a03e0467.css">
 
 		
 	</head>
@@ -22,26 +27,34 @@
 		<div id="svelte">
 
 
-<header><nav class="svelte-d8yqwh"><div class="container flex"><ul><li><a sveltekit:prefetch href="/">Home</a></li>
-		<li class="active"><a sveltekit:prefetch href="/about">About</a></li>
-		<li><a sveltekit:prefetch href="/todos">Todos</a></li></ul></div></nav>
-</header>
+<body><ion-split-pane content-id="main">
+<ion-menu content-id="main"><ion-content id="main"><ion-list><ion-item><a sveltekit:prefetch href="/">หน้าแรก</a></ion-item>
+<ion-item class="active"><a sveltekit:prefetch href="/about">เกี่ยวกับเรา</a></ion-item>
+<ion-item><a sveltekit:prefetch href="/search">ค้นหา</a></ion-item>
 
-<main class="svelte-1wxnjqg">
+<ion-item><a sveltekit:prefetch href="/box">กล่อง</a></ion-item>
+<ion-item><a sveltekit:prefetch href="/ranking">จัดอันดับ</a></ion-item>
+<ion-item><a sveltekit:prefetch href="/news">ข่าวสาร</a></ion-item></ion-list></ion-content></ion-menu>
+<ion-content id="main"><ion-header><nav class="svelte-14xcsjm"><ul class="flex justify-between"><strong>PEA</strong>
+	<div class="flex gap-5 justify-end sm: text-sm"><li><a sveltekit:prefetch href="/">หน้าแรก</a></li>
+		<li><a sveltekit:prefetch href="/search">ค้นหา</a></li>
+		<li class="active"><a sveltekit:prefetch href="/about">เกี่ยวกับเรา</a></li></div></ul></nav>
+</ion-header>
 
-<div class="content svelte-t58uux"><h1>About this app</h1>
+	<div class="container">
 
-	<p>This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the following into your command line and following the prompts:</p>
 
+<article class="text-2xl text-center my-40"><h1>ค้นหา ภายใน</h1>
+	จากระบบต่าง ๆ ที่เติมโตขึ้น เว็บไซด์มากขึ้น โปรแกรม มากขึ้น
+	<h1>จึงทำขึ้นมาเพื่อให้ช่วยในการค้นหาภายใน โดยใช้การหาแบบคลุมเคลือ และอิงหน้าที่เก็บ
+เว็บที่ยังใช้งานได้ สามารถดูรายละเอียดเพิ่มเติมได้
+	</h1>
+
+	อ้างอิง
+	<a href="https://www.notion.so/">Pbox </a>
+</article></div></ion-content></ion-split-pane>
 	
-	<pre>npx init svelte@next</pre>
-
-	<p>The page you&#39;re looking at is purely static HTML, with no client-side interactivity needed. Because of that, we don&#39;t need to load any JavaScript. Try viewing the page&#39;s source, or opening the devtools network panel and reloading.</p>
-
-	<p>The <a href="/todos">TODOs</a> page illustrates SvelteKit&#39;s data loading and form handling. Try using it with JavaScript disabled!</p>
-</div></main>
-
-<footer class="svelte-1wxnjqg"></footer>
+</body>
 
 
 
