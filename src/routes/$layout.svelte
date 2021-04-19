@@ -8,24 +8,18 @@
 	<ion-split-pane content-id="main">
 		<!--  the side menu  -->
 		<ion-menu content-id="main">
-			<ion-header>
-				<ion-toolbar>
-					<ion-title>Menu</ion-title>
-				</ion-toolbar>
-			</ion-header>
 			<Nav />
 		</ion-menu>
 		<ion-content id="main">
 			<Header />
 
-			<slot><!-- optional fallback --></slot>
+			<div class="container">
+				<slot><!-- optional fallback --></slot>
+			</div>
 		</ion-content>
 	</ion-split-pane>
 	<!-- src/routes/$layout.svelte -->
 </body>
 
 <style>
-	ion-menu {
-		@apply max-w-min;
-	}
 </style>

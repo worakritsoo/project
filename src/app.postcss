@@ -1,52 +1,84 @@
 /* Write your global styles here, in PostCSS syntax */
 
+:root {
+	--ion-color-pea: #8668f3;
+	--ion-color-pea-rgb: 134, 104, 243;
+	--ion-color-pea-contrast: #000000;
+	--ion-color-pea-contrast-rgb: 0, 0, 0;
+	--ion-color-pea-shade: #765cd6;
+	--ion-color-pea-tint: #9277f4;
+}
+:root {
+	$h: 170;
+	--color-favorite: hsl(h, 50%, 50%);
+}
+
+.ion-color-pea {
+	--ion-color-base: var(--ion-color-pea);
+	--ion-color-base-rgb: var(--ion-color-pea-rgb);
+	--ion-color-contrast: var(--ion-color-pea-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-pea-contrast-rgb);
+	--ion-color-shade: var(--ion-color-pea-shade);
+	--ion-color-tint: var(--ion-color-pea-tint);
+}
+:root {
+	--ion-color-blue: #080892;
+	--ion-color-blue-rgb: 8, 8, 146;
+	--ion-color-blue-contrast: #ffffff;
+	--ion-color-blue-contrast-rgb: 255, 255, 255;
+	--ion-color-blue-shade: #070780;
+	--ion-color-blue-tint: #21219d;
+}
+
+.ion-color-blue {
+	--ion-color-base: var(--ion-color-blue);
+	--ion-color-base-rgb: var(--ion-color-blue-rgb);
+	--ion-color-contrast: var(--ion-color-blue-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-blue-contrast-rgb);
+	--ion-color-shade: var(--ion-color-blue-shade);
+	--ion-color-tint: var(--ion-color-blue-tint);
+}
+
+:root {
+	--ion-color-bluesky: #34a8a0;
+	--ion-color-bluesky-rgb: 52, 168, 160;
+	--ion-color-bluesky-contrast: #000000;
+	--ion-color-bluesky-contrast-rgb: 0, 0, 0;
+	--ion-color-bluesky-shade: #2e948d;
+	--ion-color-bluesky-tint: #48b1aa;
+}
+
+.ion-color-bluesky {
+	--ion-color-base: var(--ion-color-bluesky);
+	--ion-color-base-rgb: var(--ion-color-bluesky-rgb);
+	--ion-color-contrast: var(--ion-color-bluesky-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-bluesky-contrast-rgb);
+	--ion-color-shade: var(--ion-color-bluesky-shade);
+	--ion-color-tint: var(--ion-color-bluesky-tint);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root{
-	--text-prime:#360568;
-	--text-second:#5b2a86 ;
-	--text-success:#7785ac ;
-	--text-active:#9ac6c5;
-	--text-hover:#a5e6ba;
-
-}
-
 @layer base {
-  h1 {
-    @apply text-2xl;
-  }
-  h2 {
-    @apply text-xl;
-  }
+	button {
+		@apply rounded-md shadow-md;
+	}
+
+	.green {
+		@apply text-white bg-green-500 hover:bg-green-700;
+	}
+	.primary {
+		@apply text-white bg-purple-500 hover:bg-purple-700;
+	}
+	.secondary {
+		@apply text-white bg-indigo-500 hover:bg-indigo-700;
+	}
+	.color-fade {
+		@apply text-gray-700 bg-blue-300 hover:bg-blue-600;
+	}
+	.color-thin {
+		@apply text-white bg-green-600 hover:bg-green-700;
+	}
 }
-
-h1{
-	color:var(--text-prime)
-}
-
-h2{
-	color:var(--text-second)
-}
-
-
-.btn{
-	background: #a57ee2;
-	color: #fff;
-	background-hover: #fff;
-	background-focused: #fff;
-	background-activated-opacity: 0;
-	background-focused-opacity: 0.24;
-	background-hover-opacity: 0.08;
-}
-
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
-/* Document
-   ========================================================================== */
-
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */

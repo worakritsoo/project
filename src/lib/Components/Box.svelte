@@ -1,5 +1,11 @@
+<script>
+	export let title;
+</script>
+
 <div class="box">
+	<slot prop={title} name="header" class="bg-blue-400"><!-- optional fallback --></slot>
 	<slot />
+	<slot name="footer"><!-- optional fallback --></slot>
 </div>
 
 <style>

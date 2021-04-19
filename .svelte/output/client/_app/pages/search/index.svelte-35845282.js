@@ -1,1 +1,0 @@
-import{S as s,i as t,s as a,e,c,b as i,f as n,C as r,d as h}from"../../chunks/index-befac657.js";function u(s){let t;return{c(){t=e("input"),this.h()},l(s){t=c(s,"INPUT",{type:!0}),this.h()},h(){i(t,"type","search")},m(s,a){n(s,t,a)},p:r,i:r,o:r,d(s){s&&h(t)}}}export default class extends s{constructor(s){super(),t(this,s,null,u,a,{})}}

@@ -1,7 +1,9 @@
 <script>
-	export let color;
+	export let text;
 </script>
 
-<button class="bg-[#{color}] bg-opacity-20 hover:bg-opacity-70 focus-within:not-sr-only">
-	Add
+<button
+	class="bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50"
+>
+	{text}
 </button>
