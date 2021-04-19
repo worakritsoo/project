@@ -1,0 +1,52 @@
+/* Write your global styles here, in PostCSS syntax */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+	--text-prime:#360568;
+	--text-second:#5b2a86 ;
+	--text-success:#7785ac ;
+	--text-active:#9ac6c5;
+	--text-hover:#a5e6ba;
+
+}
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+}
+
+h1{
+	color:var(--text-prime)
+}
+
+h2{
+	color:var(--text-second)
+}
+
+
+.btn{
+	background: #a57ee2;
+	color: #fff;
+	background-hover: #fff;
+	background-focused: #fff;
+	background-activated-opacity: 0;
+	background-focused-opacity: 0.24;
+	background-hover-opacity: 0.08;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */

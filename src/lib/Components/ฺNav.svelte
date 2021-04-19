@@ -1,0 +1,9 @@
+<ion-nav>
+	<ion-list>
+		<ion-item>about</ion-item>
+		<ion-item>home</ion-item>
+		<ion-item>page</ion-item>
+		<ion-item>search</ion-item>
+		<ion-item>box</ion-item>
+	</ion-list>
+</ion-nav>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Home</title>
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-7be64c4d.js">
+		<link rel="modulepreload" href="/./_app/chunks/index-befac657.js">
+		<link rel="modulepreload" href="/./_app/pages/$layout.svelte-96f9f7ea.js">
+		<link rel="modulepreload" href="/./_app/pages/index.svelte-982bc8d7.js">
+		<link rel="stylesheet" href="/./_app/assets/start-0826e215.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/$layout.svelte-ad0ec971.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/index.svelte-5ba10101.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-7be64c4d.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/$layout.svelte-96f9f7ea.js"),
+						import("/./_app/pages/index.svelte-982bc8d7.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<header><nav class="svelte-d8yqwh"><div class="container flex"><ul><li class="active"><a sveltekit:prefetch href="/">Home</a></li>
+		<li><a sveltekit:prefetch href="/about">About</a></li>
+		<li><a sveltekit:prefetch href="/todos">Todos</a></li></ul></div></nav>
+</header>
+
+<main class="svelte-1wxnjqg">
+
+<section class="svelte-8cruuo">Hello world</section></main>
+
+<footer class="svelte-1wxnjqg"></footer>
+
+
+
+	
+</div>
+	</body>
+</html>
